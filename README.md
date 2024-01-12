@@ -10,7 +10,7 @@ A simple path tracer implemented with the help of [ray tracing in one weekend](h
 	* Dielectrics
 * Positionable Camera
 
-![Random Spheres generated using this path tracer](/Users/thanmaisahith/graphics/rtinoneweekend/image large.png "Random Spheres generated using this path tracer (1200 x 675)")
+![Random Spheres generated using this path tracer](./image \large.png "Random Spheres generated using this path tracer (1200 x 675)")
 
 ## To be Implemented
 * Textures
