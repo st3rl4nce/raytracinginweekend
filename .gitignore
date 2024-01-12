@@ -1,0 +1,15 @@
+# ignore build artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# ignore executables
+*.exe
+*.out
+RTWeekend
+image.ppm
+
+# ignore platform specific folders
+.vscode/
+.DS_Store
