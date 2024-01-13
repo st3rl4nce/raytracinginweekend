@@ -18,5 +18,7 @@ A simple path tracer implemented with the help of [ray tracing in one weekend](h
 
 * Textures
 * Volumes
-* quadrilaterals
 * lighting
+* Different shapes like:
+  * ray quad intersection
+  * ray triangle intersection

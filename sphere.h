@@ -5,14 +5,12 @@
 #include "vec3.h"
 #include "interval.h"
 
-class sphere : public hittable
-{
+class sphere : public hittable {
 public:
-    sphere(point3 _center, double _radius, shared_ptr<material> _material) 
-    : center(_center), radius(_radius), mat(_material) {}
+    sphere(point3 _center, double _radius, shared_ptr<material> _material)
+        : center(_center), radius(_radius), mat(_material) {}
 
-    bool hit(const ray &r, interval ray_t, hit_record &rec) const override
-    {
+    bool hit(const ray& r, interval ray_t, hit_record& rec) const override {
         vec3 oc = r.origin() - center;
         auto a = r.direction().length_squared();
         auto half_b = dot(oc, r.direction());
@@ -24,8 +22,7 @@ public:
         auto sqrtd = sqrt(discriminant);
 
         auto root = (-half_b - sqrtd) / a;
-        if (!ray_t.surrounds(root))
-        {
+        if (!ray_t.surrounds(root)) {
             root = (-half_b + sqrtd) / a;
             if (!ray_t.surrounds(root))
                 return false;
